@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidad en la Web</title>
+    <style>
+        /* Estilo "amateur chido" - Colores neón, fuentes de sistema y bordes llamativos */
+        body {
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff00ff;
+            text-shadow: 3px 3px #0000ff;
+            text-transform: uppercase;
+            border-bottom: 2px dashed #ff00ff;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffff00;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            border: 4px double #ff3300;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 800px;
+            background-color: #1a1a1a;
+            box-shadow: 5px 5px 0px #ff3300;
+        }
+
+        ul {
+            list-style-type: square;
+            color: #ffffff;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .resaltado {
+            color: #ff00ff;
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #00ffcc;
+            color: #000;
+            font-size: 18px;
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Toque amateur clásico */
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px #00ffcc;
+        }
+
+        button:hover {
+            background-color: #ff00ff;
+            color: white;
+        }
+
+        #secreto {
+            display: none;
+            border: 2px dotted #ffff00;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- El clásico marquee para el toque amateur -->
+    <marquee scrollamount="8" style="color: #ff3300; font-size: 24px; font-weight: bold;">
+        ¡ALERTA! La información personal y sensible está a solo dos clics de distancia[span_1](start_span)[span_1](end_span) - Protege tu huella digital[span_2](start_span)[span_2](end_span)
+    </marquee>
+
+    <h1>Privacidad de Datos Personales en el Internet</h1>
+
+    <div class="contenedor">
+        <h2>¿Cuál es el problema?</h2>
+        <p>El manejo de datos personales en internet es un tema crítico en la actualidad[span_3](start_span)[span_3](end_span). Esta disponibilidad de información abre brechas de seguridad que personas maliciosas aprovechan para cometer fraudes o actos de intimidación[span_4](start_span)[span_4](end_span).</p>
+        <p>Según la Agencia española de protección de datos, el riesgo no suele ser una falla técnica, sino el comportamiento del usuario, como otorgar permisos excesivos o no leer términos y condiciones[span_5](start_span)[span_5](end_span).</p>
+    </div>
+
+    <div class="contenedor">
+        <h2>Derechos ARCO</h2>
+        <p>El INAI nos recuerda la importancia de los derechos ARCO para salvaguardar nuestra información[span_6](start_span)[span_6](end_span):</p>
+        <ul>
+            <li><span class="resaltado">A - Acceso:</span> Tienes derecho a saber qué datos tuyos tienen guardados y para qué los usan[span_7](start_span)[span_7](end_span).</li>
+            <li><span class="resaltado">R - Rectificación:</span> Puedes exigir que corrijan datos equivocados o desactualizados[span_8](start_span)[span_8](end_span).</li>
+            <li><span class="resaltado">C - Cancelación:</span> Es pedir que borren tus datos si ya no son necesarios o no diste tu consentimiento[span_9](start_span)[span_9](end_span).</li>
+            <li><span class="resaltado">O - Oposición:</span> Te permite negarte a que utilicen tus datos para ciertas cosas específicas[span_10](start_span)[span_10](end_span).</li>
+        </ul>
+    </div>
+
+    <div class="contenedor">
+        <h2>El peligro del Oversharing</h2>
+        <p>Iniseg señala que el problema principal radica en el <span class="resaltado">oversharing</span> o sobreexposición[span_11](start_span)[span_11](end_span). Los jóvenes comparten de forma inconsciente cada detalle de su vida diaria en redes, aceptan extraños y publican su ubicación en tiempo real[span_12](start_span)[span_12](end_span).</p>
+    </div>
+
+    <!-- Interacción con JavaScript -->
+    <button onclick="revelarReflexion()">Haz clic para ver la conclusión del equipo</button>
+
+    <div class="contenedor" id="secreto">
+        <h2>Conclusión Generada</h2>
+        <p>La seguridad digital depende enteramente de nuestras acciones cotidianas[span_13](start_span)[span_13](end_span). Nuestra huella digital crece por nuestras malas costumbres, pero se puede controlar aplicando candados de privacidad y ejerciendo nuestros derechos[span_14](start_span)[span_14](end_span). ¡Cuidar los datos depende 100% de los hábitos de cada uno[span_15](start_span)[span_15](end_span)!</p>
+    </div>
+
+    <script>
+        // JS simple para mostrar contenido y lanzar una alerta
+        function revelarReflexion() {
+            var divSecreto = document.getElementById("secreto");
+            if (divSecreto.style.display === "none" || divSecreto.style.display === "") {
+                divSecreto.style.display = "block";
+                // Alerta estilo pop-up antiguo
+                alert("¡Recuerda! La privacidad en internet es chamba de cada usuario si queremos evitar un mal uso de nuestra información.[span_16](start_span)[span_16](end_span)");
+            } else {
+                divSecreto.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+  </html>
+                                                                                                                                                                                                                                                    
