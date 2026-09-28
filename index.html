@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidad en Internet - Frutiger Aero</title>
+    <style>
+        /* Estética Frutiger Aero: Fondos de naturaleza abstracta, brillos y degradados */
+        body {
+            /* Degradado de cielo a pasto muy común en esa era */
+            background: linear-gradient(to bottom, #a0d8ef 0%, #e8f9fd 50%, #d5f0d3 100%);
+            background-attachment: fixed;
+            font-family: "Segoe UI", "Frutiger", "Trebuchet MS", Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Contenedores con efecto "Aero Glass" (Vidrio esmerilado) */
+        .window {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .window-header {
+            font-size: 24px;
+            color: #005599;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            border-bottom: 2px solid rgba(0, 85, 153, 0.2);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .window-header::before {
+            content: "🌐"; /* Ícono estilo skeuomórfico */
+            margin-right: 10px;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: #0077cc;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* Botón estilo Glossy/Aero */
+        .aero-btn {
+            display: block;
+            margin: 20px auto;
+            background: linear-gradient(to bottom, #f2f9fe 0%, #d6f0fd 49%, #bee6fd 50%, #a4d9f6 100%);
+            border: 1px solid #759abf;
+            border-radius: 20px;
+            padding: 10px 25px;
+            color: #003366;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.9);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .aero-btn:hover {
+            background: linear-gradient(to bottom, #ffffff 0%, #e6f5ff 49%, #d4efff 50%, #c4e8ff 100%);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px 3px rgba(255,255,255,1), 0 0 10px rgba(164, 217, 246, 0.6);
+        }
+
+        .aero-btn:active {
+            background: linear-gradient(to bottom, #bee6fd 0%, #a4d9f6 100%);
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            padding: 15px 15px 15px 40px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        #secreto {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="window">
+        <div class="window-header">Privacidad de datos en Internet</div>
+        <p>El manejo de datos personales en internet es un tema crítico en la actualidad, ya que nos encontramos en una era donde la información personal y sensible está a solo dos clics de distancia[span_0](start_span)[span_0](end_span). La disponibilidad de nuestra información abre brechas de seguridad que pueden ser aprovechadas para cometer fraudes o realizar actos de intimidación[span_1](start_span)[span_1](end_span).</p>
+        
+        <h3>El origen del problema</h3>
+        <p>Según la Agencia española de protección de datos, el problema principal no suele ser una falla técnica de las aplicaciones, sino el comportamiento del usuario[span_2](start_span)[span_2](end_span). Iniseg menciona el fenómeno del <strong>oversharing</strong>, donde los jóvenes comparten de forma inconsciente cada detalle de su vida diaria, aceptando solicitudes de extraños y publicando ubicaciones en tiempo real[span_3](start_span)[span_3](end_span).</p>
+    </div>
+
+    <div class="window">
+        <div class="window-header">Herramientas de Protección</div>
+        <p>El INAI propone la importancia de reconocer y ejercer los derechos ARCO para proteger nuestra información[span_4](start_span)[span_4](end_span):</p>
+        <ul>
+            <li><strong>Acceso:</strong> Tienes derecho a saber qué datos tuyos tienen guardados, quién los tiene y para qué los está usando[span_5](start_span)[span_5](end_span).</li>
+            <li><strong>Rectificación:</strong> Puedes exigir que corrijan un dato tuyo equivocado, desactualizado o incompleto[span_6](start_span)[span_6](end_span).</li>
+            <li><strong>Cancelación:</strong> Es el derecho a pedir que borren tus datos cuando ya no sean necesarios[span_7](start_span)[span_7](end_span).</li>
+            <li><strong>Oposición:</strong> Te permite negarte a que utilicen tus datos para ciertas cosas específicas[span_8](start_span)[span_8](end_span).</li>
+        </ul>
+    </div>
+
+    <!-- Botón estilo Windows Vista -->
+    <button class="aero-btn" onclick="revelarConclusiones()">Mostrar Conclusiones</button>
+
+    <div class="window" id="secreto">
+        <div class="window-header">Conclusión del Análisis</div>
+        <p>Nuestra huella digital crece por nuestras malas costumbres, pero se puede controlar aplicando candados de privacidad y ejerciendo nuestros derechos[span_9](start_span)[span_9](end_span). La seguridad digital depende enteramente de nuestras acciones cotidianas, como poner perfiles privados y esconder información sensible[span_10](start_span)[span_10](end_span). La privacidad en internet es chamba de cada usuario si realmente queremos evitar un mal uso de nuestra información[span_11](start_span)[span_11](end_span).</p>
+    </div>
+
+    <script>
+        function revelarConclusiones() {
+            var elemento = document.getElementById("secreto");
+            if (elemento.style.display === "none" || elemento.style.display === "") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
